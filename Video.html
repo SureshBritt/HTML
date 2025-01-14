@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+<h1> HTML Multimedia</h1>
+<video width="400" controls>
+  <source src="img/mov_bbb.mp4" type="video/mp4">
+  <source src="img/mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+<hr>
+<h1> HTML Multimedia -video element </h1>
+<video width="320" height="240" controls>
+  <source src="img/movie.mp4" type="video/mp4">
+  <source src="img/movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<hr>
+<h1> HTML Multimedia -video element - Auto play</h1>
+<video width="320" height="240" autoplay>
+  <source src="img/movie.mp4" type="video/mp4">
+  <source src="img/movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<hr>
+<h1> HTML Multimedia -video element - Auto play-muted</h1>
+<video width="320" height="240" autoplay muted>
+  <source src="img/movie.mp4" type="video/mp4">
+  <source src="img/movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<hr>
+<h1> HTML Multimedia -video element- Controls using javascript </h1>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="img/mov_bbb.mp4" type="video/mp4">
+    <source src="img/mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+
+</body> 
+</html>
+
